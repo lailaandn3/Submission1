@@ -1,20 +1,21 @@
 # **Laporan Proyek Machine Learning - [Laila]**
 ## **🏘️ Domain Proyek**
 
-Prediksi harga rumah adalah salah satu isu penting dalam dunia data science karena berpengaruh langsung pada sektor properti dan ekonomi masyarakat. Perkiraan harga yang tepat sangat membantu dalam pengambilan keputusan untuk pembeli, penjual, investor properti, dan juga lembaga keuangan. Oleh karena itu, diperlukan model yang bisa memahami hubungan rumit antara karakteristik rumah dan harga jualnya.
+Prediksi harga rumah adalah aspek krusial di bidang real estat, yang mempengaruhi pembelian, penjualan, investasi, dan kebijakan perencanaan kota. Estimasi harga yang tepat akan membantu beragam pihak, seperti pembeli, penjual, agen properti, dan lembaga keuangan, untuk mengambil keputusan yang tepat. Kendati itu, kompleksitas faktor yang dipengaruhikan, antara lain lokasi, ukuran, fasilitas.
 
-Dalam proyek ini, digunakan dataset Ames Housing, yang dibuat oleh De Cock (2011) sebagai pilihan yang lebih menyeluruh dibandingkan dengan Boston Housing Dataset. Dataset ini mencakup lebih dari 2.900 rumah yang ada di Ames, Iowa, dan memiliki lebih dari 70 fitur, seperti ukuran bangunan, jumlah kamar, jenis konstruksi, kualitas material, lokasi, dan banyak variabel lainnya (De Cock, 2011)
+Selama beberapa tahun terakhir, pendekatan machine learning menunjukkan potensi yang sangat besar untuk memperbaiki akurasi prediksi harga rumah. Algoritma Random Forest dapat mengolah hubungan non-linear dan interaksi kompleks antar fitur, membuat alat ini sebagai alat yang sangat berguna di dalam struktur prediktif harga rumah. Penelitian oleh Wiltshire (2022) mengindikasikan bahwa Random Forest Regression bisa saja memprediksi harga rumah secara efektif melihat dari lokasi dan properti feature, menghasilkan akurasi yang sangat tinggi di dalam prediksi harga.
 
-Penggunaan algoritma machine learning seperti Random Forest telah terbukti memberikan hasil prediksi yang baik dalam penelitian sebelumnya. Sebagai contoh, dalam studi oleh Nguyen et al.(2021), model-model ensemble seperti Random Forest dan Gradient Boosting menunjukkan kinerja yang sangat baik dalam memprediksi harga rumah karena kemampuannya dalam menangani data yang tidak linear dan kompleks. Hal serupa juga dinyatakan oleh Song (2021), yang menguji berbagai teknik machine learning untuk regresi harga rumah dan menekankan pentingnya pemilihan fitur dan validasi model.
+Selain itu, proses seleksi fitur yang tepat (feature selection) juga berperan penting dalam menginisiasi performa model. Guo (2023) menegaskan bahwa proses seleksi fitur yang relevan dapat secara signifikan menambah akurasi prediksi harga rumah melalui pencabutan noise dan overfitting dalam.
 
-Dengan membangun model prediktif menggunakan dataset Ames Housing, proyek ini bertujuan untuk memahami fitur-fitur utama yang memengaruhi harga rumah serta menghasilkan sistem prediksi yang akurat, berguna, dan bisa diterapkan dalam skala nyata.
+Proyek ini membawa tujuan untuk mengembangkan model prediksi hargas rumah yang akurat dari dataset Ames Housing yang diciptakan oleh De Cock (2011) sebagai peletakan alternatif dari Boston Housing Dataset. Dengan mempergunakan teknik machine learning dan pemilihan feature yang tepat, proyek ini diharapkan dapat menentukan faktor utama yang mempengaruh hargas rumah dan menyajikan alat prediksi yang dapat diaplikasikan pada konteks dunia nyata."
 
 ### **📚 Daftar Referensi:**
 
 - De Cock, D. (2011). Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education, 19(3). https://doi.org/10.1080/10691898.2011.11889627
-- Nguyen, H., Ngo, T., & Phung, D. (2021). A Machine Learning Approach for Predicting House Prices. Journal of Big Data, 8(1), 1–16. https://doi.org/10.1186/s40537-021-00463-3
-- Song, H. J. (2021). House Price Prediction Using Machine Learning Techniques. IEEE Access, 9, 19011–19024. https://doi.org/10.1109/ACCESS.2021.3054529
 
+- Wiltshire, A. (2022). House Price Prediction using Random Forest Machine Learning Technique. Procedia Computer Science, 199, 806–813. https://doi.org/10.1016/j.procs.2022.01.100
+
+- Guo, J. (2023). Feature Selection in House Price Prediction. Highlights in Business, Economics and Management, 21. https://drpress.org/ojs/index.php/HBEM/article/view/14755
 ## **🎯 Business Understanding**
 
 **📌 Problem Statements**

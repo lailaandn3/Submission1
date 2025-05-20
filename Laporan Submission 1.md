@@ -1,4 +1,4 @@
-#**Laporan Proyek Machine Learning - [Laila]**
+# **Laporan Proyek Machine Learning - [Laila]**
 ## **🏘️ Domain Proyek**
 
 Prediksi harga rumah adalah salah satu isu penting dalam dunia data science karena berpengaruh langsung pada sektor properti dan ekonomi masyarakat. Perkiraan harga yang tepat sangat membantu dalam pengambilan keputusan untuk pembeli, penjual, investor properti, dan juga lembaga keuangan. Oleh karena itu, diperlukan model yang bisa memahami hubungan rumit antara karakteristik rumah dan harga jualnya.

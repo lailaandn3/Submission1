@@ -101,12 +101,6 @@ Nilai ini menunjukkan bahwa model mampu menjelaskan sekitar 88.6% dari variasi h
 Model Random Forest secara konsisten menghasilkan skor yang lebih tinggi dibandingkan Linear Regression, menunjukkan bahwa ia lebih mampu menangkap kompleksitas dalam data.
 
 ## 5. **🔍 Interpretasi Feature Importance 🌟**
-Berdasarkan model Random Forest, fitur-fitur yang paling berpengaruh terhadap harga rumah adalah:
-Berikut bagian **🔍 Interpretasi Feature Importance 🌟** yang telah dilengkapi berdasarkan grafik yang kamu berikan:
-
----
-
-## **🔍 Interpretasi Feature Importance 🌟**
 
 Berdasarkan model Random Forest, fitur-fitur yang paling berpengaruh terhadap harga rumah adalah:
 

@@ -23,7 +23,8 @@ Dengan membangun model prediktif menggunakan dataset Ames Housing, proyek ini be
 - Membangun dua model: Linear Regression sebagai baseline dan Random Forest Regressor sebagai model advanced.
 - Evaluasi dilakukan dengan metrik R² Score dan Cross-validation untuk menilai generalisasi model.
 
-##**📊 Data Understanding**
+## **📊 Data Understanding**
+
 Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat diakses dari Kaggle. Dataset ini terdiri dari berbagai fitur yang menjelaskan kondisi, ukuran, lokasi, dan karakteristik rumah.
 
 **🧾 Penjelasan Fitur**
@@ -34,7 +35,8 @@ Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat
 
 Dataset ini terdiri dari 82 kolom fitur dan 1 kolom target yaitu SalePrice yang merupakan harga jual rumah.
 
-##**🧹 Data Preparation**
+## **🧹 Data Preparation**
+
 **🧼 1. Data Cleaning**
 
 Langkah-langkah pembersihan data yang dilakukan:
@@ -57,11 +59,11 @@ Tujuan dari pembuatan fitur ini adalah agar model dapat lebih mudah mengenali pe
 
 Dalam tahap ini, dilakukan beberapa langkah untuk membangun dan mengevaluasi model prediksi harga rumah.
 
-###**1. Split Data 🧪**
+### **1. Split Data 🧪**
 
 Pertama, data dipisahkan menjadi fitur dan target, kemudian dibagi menjadi data latih dan data uji dengan perbandingan 80:20. Pemisahan ini dilakukan untuk memastikan bahwa model dapat diuji pada data yang belum pernah dilihat sebelumnya, sehingga performanya lebih objektif.
 
-###**2. Baseline Model – Linear Regression 📉**
+### **2. Baseline Model – Linear Regression 📉**
 
 Model pertama yang digunakan adalah **Linear Regression** sebagai baseline. Model ini dilatih menggunakan data latih, lalu diuji menggunakan data uji untuk mendapatkan metrik awal performa. Hasilnya digunakan sebagai pembanding untuk model lanjutan.
 
@@ -80,7 +82,7 @@ Model ini menghasilkan:
 * **R² Score** sebesar **0.912**
 
 
-###4. **📈 Evaluation**
+### 4. **📈 Evaluation**
 Model dievaluasi menggunakan metrik R² Score, yang menunjukkan seberapa baik varians target bisa dijelaskan oleh fitur.
 
 Hasil evaluasi:

@@ -110,6 +110,7 @@ Model Random Forest secara konsisten menghasilkan skor yang lebih tinggi dibandi
 ### 5. **🔍 Interpretasi Feature Importance 🌟**
 
 Berdasarkan model Random Forest, fitur-fitur yang paling berpengaruh terhadap harga rumah adalah:
+![image alt](https://github.com/lailaandn3/Submission1/blob/b3feaa37d757328010b3d313d910d46c40303f21/download.png) 
 
 1. **Overall Qual** – Fitur ini memiliki skor kepentingan tertinggi, menunjukkan bahwa kualitas keseluruhan rumah merupakan faktor paling dominan dalam menentukan harga. Ini mencerminkan kondisi material dan finishing rumah secara umum.
 2. **Gr Liv Area** – Luas ruang tinggal di atas tanah juga sangat berpengaruh. Semakin besar luas ruang tinggal, biasanya harga rumah juga semakin tinggi.

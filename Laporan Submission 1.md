@@ -72,7 +72,7 @@ Model ini menghasilkan:
 * **Root Mean Squared Error (RMSE)** sebesar **29,152.88**
 * **R² Score** sebesar **0.894**
 
-###**3. Advanced Model – Random Forest Regressor🌲**
+### **3. Advanced Model – Random Forest Regressor🌲**
 
 Selanjutnya, digunakan **Random Forest Regressor** tanpa hyperparameter tuning (menggunakan parameter default). Model ini dianggap lebih mampu menangkap kompleksitas hubungan antar fitur.
 

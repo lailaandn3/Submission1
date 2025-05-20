@@ -28,7 +28,7 @@ Proyek ini membawa tujuan untuk mengembangkan model prediksi hargas rumah yang a
 
 **💡 Solution Statements**
 - Membangun dua model: Linear Regression sebagai baseline dan Random Forest Regressor sebagai model advanced.
-- Evaluasi dilakukan dengan metrik R² Score dan Cross-validation untuk menilai generalisasi model.
+- Menggunakan metrik R² Score dan Cross-validation untuk mengevaluasi performa model.
 
 ## **📊 Data Understanding**
 
@@ -40,7 +40,15 @@ Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat
 - YearBuilt : Tahun rumah dibangun.
 - GarageCars : Kapasitas garasi dalam jumlah mobil.
 
-Dataset ini terdiri dari 82 kolom fitur dan 1 kolom target yaitu SalePrice yang merupakan harga jual rumah.
+### **🔎 Exploratory Data Analysis (EDA)**
+
+Sebelum melakukan modeling, dilakukan exploratory data analysis untuk memahami struktur dan karakteristik data yang digunakan. Beberapa langkah EDA yang dilakukan antara lain:
+
+- Melihat ringkasan informasi dataset menggunakan fungsi df.info() untuk mengidentifikasi tipe data dan jumlah missing value pada setiap kolom. Dari hasil ini diketahui terdapat beberapa fitur dengan missing value cukup banyak seperti Alley, Mas Vnr Type, dan lain-lain.
+
+- Melakukan analisis statistik deskriptif pada fitur numerik untuk memahami distribusi nilai, seperti mean, median, standar deviasi, serta pengecekan nilai minimum dan maksimum.
+
+- Dataset ini terdiri dari 82 kolom fitur dan 1 kolom target yaitu SalePrice yang merupakan harga jual rumah.
 
 ## **🧹 Data Preparation**
 
@@ -72,8 +80,12 @@ Pertama, data dipisahkan menjadi fitur dan target, kemudian dibagi menjadi data 
 
 ### **2. Baseline Model – Linear Regression 📉**
 
-Model pertama yang digunakan adalah **Linear Regression** sebagai baseline. Model ini dilatih menggunakan data latih, lalu diuji menggunakan data uji untuk mendapatkan metrik awal performa. Hasilnya digunakan sebagai pembanding untuk model lanjutan.
+Model pertama yang digunakan adalah Linear Regression sebagai baseline.
 
+- Kelebihan: Sederhana, cepat dilatih, dan hasilnya mudah diinterpretasi.
+
+- Kekurangan: Sensitif terhadap outlier dan hanya mampu menangkap hubungan linear antar variabel.
+- 
 Model ini menghasilkan:
 
 * **Root Mean Squared Error (RMSE)** sebesar **29,152.88**
@@ -81,7 +93,11 @@ Model ini menghasilkan:
 
 ### **3. Advanced Model – Random Forest Regressor🌲**
 
-Selanjutnya, digunakan **Random Forest Regressor** tanpa hyperparameter tuning (menggunakan parameter default). Model ini dianggap lebih mampu menangkap kompleksitas hubungan antar fitur.
+Model selanjutnya adalah Random Forest Regressor, yaitu algoritma ensemble berbasis decision tree.
+
+- Kelebihan: Mampu menangani hubungan non-linear, lebih tahan terhadap outlier, dan meminimalkan overfitting dibandingkan single tree.
+
+- Kekurangan: Interpretasi model lebih kompleks dan membutuhkan waktu komputasi lebih lama.
 
 Model ini menghasilkan:
 
@@ -89,23 +105,15 @@ Model ini menghasilkan:
 * **R² Score** sebesar **0.912**
 
 
-### 4. **📈 Evaluation**
-Model dievaluasi menggunakan metrik R² Score, yang menunjukkan seberapa baik varians target bisa dijelaskan oleh fitur.
+### 4. **📈 Evaluasi Model dengan Cross-Validation 🔁 **
 
-Hasil evaluasi:
+Untuk mengevaluasi performa model secara lebih menyeluruh, digunakan teknik 5-fold cross-validation pada model Random Forest.
+Hasil cross-validation (scoring R²):
+`[0.9043, 0.9269, 0.8719, 0.8243, 0.9042]`
 
-- Linear Regression (R²): 0.60
+- Rata-rata R²: 0.886
+Model menunjukkan performa stabil dan unggul dibandingkan model baseline.
 
-- Random Forest (R² pada data uji): 0.81
-
-- Cross-validation scores (R²): [0.90, 0.92, 0.87, 0.82, 0.90]
-
-- Rata-rata R² CV: 0.886
-
-Nilai ini menunjukkan bahwa model mampu menjelaskan sekitar 88.6% dari variasi harga rumah, yang berarti model memiliki performa yang cukup baik dan dapat diandalkan.
-
-**📊 Interpretasi**:
-Model Random Forest secara konsisten menghasilkan skor yang lebih tinggi dibandingkan Linear Regression, menunjukkan bahwa ia lebih mampu menangkap kompleksitas dalam data.
 
 ### 5. **🔍 Interpretasi Feature Importance 🌟**
 
@@ -127,3 +135,39 @@ Berdasarkan model Random Forest, fitur-fitur yang paling berpengaruh terhadap ha
 13. **Lot Frontage** – Panjang sisi properti yang berbatasan dengan jalan juga turut memengaruhi harga, terutama dari sisi tampilan depan rumah.
 
 Fitur **Overall Qual** tampak jauh lebih dominan dibandingkan fitur lainnya, yang menegaskan pentingnya kualitas keseluruhan dalam menilai harga rumah. Hal ini juga mengindikasikan bahwa peningkatan kualitas finishing atau material bisa berdampak besar terhadap nilai properti 🔧🏠
+
+
+## **📊 Evaluation**
+
+### **🔢 Metrik Evaluasi yang Digunakan**
+
+Evaluasi model dilakukan dengan menggunakan metrik:
+
+* **Root Mean Squared Error (RMSE)**: Mengukur seberapa besar deviasi rata-rata prediksi dari nilai sebenarnya dalam satuan harga rumah. Nilai RMSE yang lebih kecil berarti prediksi model lebih akurat.
+
+* **R² Score (Coefficient of Determination)**: Menunjukkan seberapa besar variabilitas data target yang dapat dijelaskan oleh model. Semakin mendekati 1, semakin baik model dalam menjelaskan variansi harga rumah.
+
+### **📊 Hasil Evaluasi Model**
+
+| Model                   | RMSE      | R² Score | Cross-Validation (mean R²) |
+| ----------------------- | --------- | -------- | -------------------------- |
+| Linear Regression       | 29,152.88 | 0.894    | -                          |
+| Random Forest Regressor | 26,527.25 | 0.912    | 0.886                      |
+
+Dari tabel di atas, terlihat bahwa Random Forest Regressor secara konsisten memberikan performa yang lebih baik dibandingkan Linear Regression, baik dari sisi error prediksi maupun kemampuan generalisasi.
+
+### **🔁 Analisis Cross-Validation**
+
+Cross-validation 5-fold digunakan untuk mengevaluasi kestabilan performa model Random Forest. Berikut adalah skor R² untuk setiap fold:
+
+```
+[0.9043, 0.9269, 0.8719, 0.8243, 0.9042]
+```
+
+Nilai rata-rata R² adalah **0.886**, dengan variasi yang relatif kecil, menunjukkan bahwa model cukup stabil terhadap perbedaan data.
+
+### **Kesimpulan**
+
+Berdasarkan hasil evaluasi, **Random Forest Regressor** menunjukkan performa yang lebih baik dan stabil dibandingkan Linear Regression. Oleh karena itu, model ini dipilih sebagai solusi akhir dalam memprediksi harga rumah.
+
+

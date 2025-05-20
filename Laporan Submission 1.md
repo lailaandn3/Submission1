@@ -9,6 +9,12 @@ Penggunaan algoritma machine learning seperti Random Forest telah terbukti membe
 
 Dengan membangun model prediktif menggunakan dataset Ames Housing, proyek ini bertujuan untuk memahami fitur-fitur utama yang memengaruhi harga rumah serta menghasilkan sistem prediksi yang akurat, berguna, dan bisa diterapkan dalam skala nyata.
 
+### **📚 Daftar Referensi:**
+
+- De Cock, D. (2011). Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education, 19(3). https://doi.org/10.1080/10691898.2011.11889627
+- Nguyen, H., Ngo, T., & Phung, D. (2021). A Machine Learning Approach for Predicting House Prices. Journal of Big Data, 8(1), 1–16. https://doi.org/10.1186/s40537-021-00463-3
+- Song, H. J. (2021). House Price Prediction Using Machine Learning Techniques. IEEE Access, 9, 19011–19024. https://doi.org/10.1109/ACCESS.2021.3054529
+
 ## **🎯 Business Understanding**
 
 **📌 Problem Statements**
@@ -25,7 +31,7 @@ Dengan membangun model prediktif menggunakan dataset Ames Housing, proyek ini be
 
 ## **📊 Data Understanding**
 
-Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat diakses dari Kaggle. Dataset ini terdiri dari berbagai fitur yang menjelaskan kondisi, ukuran, lokasi, dan karakteristik rumah.
+Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat diakses dari https://www.kaggle.com/datasets/prevek18/ames-housing-dataset. Dataset ini terdiri dari berbagai fitur yang menjelaskan kondisi, ukuran, lokasi, dan karakteristik rumah.
 
 **🧾 Penjelasan Fitur**
 - OverallQual : Kualitas material dan hasil akhir rumah secara keseluruhan.

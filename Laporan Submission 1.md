@@ -51,7 +51,7 @@ Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat
     Dari pengecekan `df.duplicated().sum()` ditemukan tidak ada data duplikat pada dataset.
 
 - Tipe Data
-- 
+
     Dataset terdiri dari tipe data numerik dan kategorikal. Variabel kategorikal diubah menjadi variabel numerik melalui teknik One Hot Encoding sebelum modeling.
 
 - Uraian Fitur Dataset Ames Housing

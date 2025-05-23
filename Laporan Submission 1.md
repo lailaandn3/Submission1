@@ -34,6 +34,27 @@ Proyek ini membawa tujuan untuk mengembangkan model prediksi hargas rumah yang a
 
 Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat diakses dari https://www.kaggle.com/datasets/prevek18/ames-housing-dataset. Dataset ini terdiri dari berbagai fitur yang menjelaskan kondisi, ukuran, lokasi, dan karakteristik rumah.
 
+### Jumlah Data
+
+- Total data: 1460 baris (observasi)
+
+- Total fitur: 82 kolom fitur (fitur prediktor) + 1 kolom target (SalePrice)
+
+### Kondisi Data
+
+- Missing Values
+Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan Misc Feature yang memiliki missing value cukup banyak
+
+- Handling Missing Values
+missing value tersebut diatasi dengan cara:
+
+- Mengisi missing value pada fitur numerik dengan nilai median.
+
+- Mengisi missing value pada fitur kategorikal dengan modus atau kategori khusus seperti "None" untuk menunjukkan ketidakhadiran fitur.
+
+- Menghapus fitur yang memiliki missing value sangat banyak dan dianggap tidak terlalu berpengaruh terhadap prediksi.
+
+
 **🧾 Penjelasan Fitur**
 - OverallQual : Kualitas material dan hasil akhir rumah secara keseluruhan.
 - GrLivArea : Luas area tempat tinggal di atas tanah (dalam kaki persegi).

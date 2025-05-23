@@ -44,12 +44,14 @@ Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat
 
 - Missing Values
 
-Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan Misc Feature yang memiliki missing value cukup banyak
+    Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan Misc Feature yang memiliki missing value cukup banyak
 
 - Duplikat
+  
     Dari pengecekan `df.duplicated().sum()` ditemukan tidak ada data duplikat pada dataset.
 
 - Tipe Data
+- 
     Dataset terdiri dari tipe data numerik dan kategorikal. Variabel kategorikal diubah menjadi variabel numerik melalui teknik One Hot Encoding sebelum modeling.
 
 - Uraian Fitur Dataset Ames Housing
@@ -140,15 +142,22 @@ Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan
 | 82  | SalePrice       | Harga jual rumah (target variabel)                              |
 
 
-### **🔎 Exploratory Data Analysis (EDA)**
+- Rata-rata (mean):
 
-Sebelum melakukan modeling, dilakukan exploratory data analysis untuk memahami struktur dan karakteristik data yang digunakan. Beberapa langkah EDA yang dilakukan antara lain:
+  * Contohnya, rata-rata `SalePrice` sekitar 180.796 (harga rumah).
+  * Rata-rata `Lot Area` sekitar 10.148 (ukuran tanah).
 
-- Melihat ringkasan informasi dataset menggunakan fungsi df.info() untuk mengidentifikasi tipe data dan jumlah missing value pada setiap kolom. Dari hasil ini diketahui terdapat beberapa fitur dengan missing value cukup banyak seperti Alley, Mas Vnr Type, dan lain-lain.
+- Standar deviasi (std)**: Memberi tahu sebaran data. Misal, `SalePrice` memiliki std sebesar hampir 80.000, menunjukkan harga bervariasi cukup luas.
 
-- Melakukan analisis statistik deskriptif pada fitur numerik untuk memahami distribusi nilai, seperti mean, median, standar deviasi, serta pengecekan nilai minimum dan maksimum.
+- Nilai minimum dan maksimum (min, max):
 
-- Dataset ini terdiri dari 82 kolom fitur dan 1 kolom target yaitu SalePrice yang merupakan harga jual rumah.
+  * Harga rumah (`SalePrice`) mulai dari 12.789 sampai 755.000.
+  * `Lot Area` dari 1300 sampai 215.245, ini sangat besar jadi mungkin ada outlier.
+
+- Kuartil (25%, 50%, 75%):
+
+  * Memberikan insight distribusi data seperti median harga rumah 160.000 dan 75% rumah dibawah 213.500.
+
 
 ## **🧹 Data Preparation**
 

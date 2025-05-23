@@ -1,13 +1,13 @@
 # **Laporan Proyek Machine Learning - [Laila]**
 ## **🏘️ Domain Proyek**
 
-Prediksi harga rumah adalah aspek krusial di bidang real estat, yang mempengaruhi pembelian, penjualan, investasi, dan kebijakan perencanaan kota. Estimasi harga yang tepat akan membantu beragam pihak, seperti pembeli, penjual, agen properti, dan lembaga keuangan, untuk mengambil keputusan yang tepat. Kendati itu, kompleksitas faktor yang dipengaruhikan, antara lain lokasi, ukuran, fasilitas.
+Prediksi harga rumah adalah aspek krusial di bidang real estat, yang mempengaruhi pembelian, penjualan, investasi, dan kebijakan perencanaan kota. Estimasi harga yang tepat akan membantu beragam pihak, seperti pembeli, penjual, agen properti, dan lembaga keuangan, untuk mengambil keputusan yang tepat. Kendati itu, kompleksitas faktor yang dipengaruhi, antara lain lokasi, ukuran, fasilitas.
 
 Selama beberapa tahun terakhir, pendekatan machine learning menunjukkan potensi yang sangat besar untuk memperbaiki akurasi prediksi harga rumah. Algoritma Random Forest dapat mengolah hubungan non-linear dan interaksi kompleks antar fitur, membuat alat ini sebagai alat yang sangat berguna di dalam struktur prediktif harga rumah. Penelitian oleh Wiltshire (2022) mengindikasikan bahwa Random Forest Regression bisa saja memprediksi harga rumah secara efektif melihat dari lokasi dan properti feature, menghasilkan akurasi yang sangat tinggi di dalam prediksi harga.
 
-Selain itu, proses seleksi fitur yang tepat (feature selection) juga berperan penting dalam menginisiasi performa model. Guo (2023) menegaskan bahwa proses seleksi fitur yang relevan dapat secara signifikan menambah akurasi prediksi harga rumah melalui pencabutan noise dan overfitting dalam.
+Selain itu, proses seleksi fitur yang tepat (feature selection) juga berperan penting dalam menginisiasi performa model. Guo (2023) menegaskan bahwa proses seleksi fitur yang relevan dapat secara signifikan menambah akurasi prediksi harga rumah melalui pencabutan noise dan overfitting secara keseluruhan.
 
-Proyek ini membawa tujuan untuk mengembangkan model prediksi hargas rumah yang akurat dari dataset Ames Housing yang diciptakan oleh De Cock (2011) sebagai peletakan alternatif dari Boston Housing Dataset. Dengan mempergunakan teknik machine learning dan pemilihan feature yang tepat, proyek ini diharapkan dapat menentukan faktor utama yang mempengaruh hargas rumah dan menyajikan alat prediksi yang dapat diaplikasikan pada konteks dunia nyata."
+Proyek ini membawa tujuan untuk mengembangkan model prediksi harga rumah yang akurat dari dataset Ames Housing yang diciptakan oleh De Cock (2011) sebagai peletakan alternatif dari Boston Housing Dataset. Dengan mempergunakan teknik machine learning dan pemilihan feature yang tepat, proyek ini diharapkan dapat menentukan faktor utama yang mempengaruh harga rumah dan menyajikan alat prediksi yang dapat diaplikasikan pada konteks dunia nyata."
 
 ### **📚 Daftar Referensi:**
 

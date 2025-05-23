@@ -47,8 +47,7 @@ Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan
 
 - Handling Missing Values
 missing value tersebut diatasi dengan cara:
-
-- Mengisi missing value pada fitur numerik dengan nilai median.
+  1. Mengisi missing value pada fitur numerik dengan nilai median.
 
 - Mengisi missing value pada fitur kategorikal dengan modus atau kategori khusus seperti "None" untuk menunjukkan ketidakhadiran fitur.
 

@@ -43,6 +43,7 @@ Dataset yang digunakan dalam proyek ini adalah dataset "Ames Housing" yang dapat
 ### Kondisi Data
 
 - Missing Values
+
 Beberapa fitur memiliki missing value, misalnya fitur Alley, Pool QC, Fence, dan Misc Feature yang memiliki missing value cukup banyak
 
 - Duplikat

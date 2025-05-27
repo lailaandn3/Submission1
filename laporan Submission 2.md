@@ -107,7 +107,7 @@ Visualisasi ini menunjukkan **frekuensi rating** dari 1 hingga 5:
 * Rating **4** paling sering diberikan pengguna.
 * Menunjukkan kecenderungan pengguna memberikan **rating tinggi**.
 
-! [Distribusi Rating](https://raw.githubusercontent.com/lailaandn3/Submission1/b437567db75c02259c757586715ce31273341fe4/rating.png) 
+![Distribusi Rating](https://raw.githubusercontent.com/lailaandn3/Submission1/b437567db75c02259c757586715ce31273341fe4/rating.png) 
 
 ---
 

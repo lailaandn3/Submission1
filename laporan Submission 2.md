@@ -96,6 +96,41 @@ Dalam proyek ini, fokus utama diberikan pada dua struktur data:
 * Terdapat **1682 film unik**
 * Terdapat **943 pengguna unik**
 * Genre direpresentasikan dalam bentuk vektor biner yang mencakup 19 kategori genre (seperti Action, Comedy, Drama, dll.)
+* Berikut beberapa visualisasi awal untuk memahami data lebih dalam:
+
+---
+
+#### 📊 1. Distribusi Rating Film
+
+Visualisasi ini menunjukkan **frekuensi rating** dari 1 hingga 5:
+
+* Rating **4** paling sering diberikan pengguna.
+* Menunjukkan kecenderungan pengguna memberikan **rating tinggi**.
+
+*(sertakan grafik distribusi rating)*
+
+---
+
+#### 📊 2. Jumlah Rating per Film
+
+Visualisasi ini menunjukkan **banyaknya rating** yang diterima oleh masing-masing film:
+
+* Sebagian besar film menerima **kurang dari 100 rating**.
+* Distribusi **sangat miring ke kiri** (right-skewed), artinya hanya sedikit film yang mendapat rating sangat banyak.
+
+*(sertakan histogram jumlah rating per film)*
+
+---
+
+#### 📊 3. Top 10 Film dengan Jumlah Rating Terbanyak
+
+Visualisasi ini menunjukkan **10 film dengan jumlah rating terbanyak**:
+
+* **Star Wars (1977)** menjadi film paling populer dari segi rating.
+* Mayoritas film berasal dari **era 1990-an** dengan genre dominan: **fiksi ilmiah**, **komedi**, dan **aksi**.
+
+*(sertakan grafik horizontal bar top 10 film)*
+
 
 
 ## Data Preparation

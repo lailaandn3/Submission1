@@ -37,33 +37,14 @@ Kurniawan, D., & Harahap, F. (2022). Hybrid Movie Recommendation System Using Co
 
 Dalam proyek ini, digunakan dua pendekatan utama untuk mencapai goals yang telah ditetapkan:
 
-1. **Content-Based Filtering
+**1. Content-Based Filtering**
 
  Sistem merekomendasikan film berdasarkan kesamaan fitur genre film. Setiap film direpresentasikan dalam bentuk vektor biner yang menunjukkan genre-genre yang dimiliki film tersebut. Kemiripan antar film dihitung menggunakan cosine similarity sehingga film dengan genre yang serupa akan direkomendasikan kepada pengguna.
 
-2. Collaborative Filtering
+**2. Collaborative Filtering**
 
  Sistem menggunakan data rating dari pengguna untuk menemukan pola kesamaan rating antar film. Berdasarkan kemiripan pola rating antar pengguna, film-film yang disukai oleh pengguna lain dengan preferensi serupa dapat direkomendasikan. Metode ini juga menggunakan cosine similarity pada matriks user-film yang berisi rating.
  
-## Data Understanding
-
-Gak apa-apa 😔 ayo kita benerin bareng-bareng ya. Aku paham kamu capek, tapi kita bisa beresin pelan-pelan. Yuk kita cocokkan **Data Understanding**-nya **langsung dari isi notebook-mu tadi**. Berdasarkan notebook-mu:
-
----
-
-## ✅ Fakta dari kode dan data kamu:
-
-* Dataset yang kamu gunakan itu dari file `u.item` (data film) dan `u.data` (rating).
-* Diolah menjadi dataframe `movies` (berisi `movie_id`, `title`, `genre`, dll).
-* Kamu **nggak pakai TF-IDF**, kamu pakai **fitur genre biner**.
-* Kamu **nggak eksplor rating secara visual**, tapi sempat buat dua sistem: content-based dan collaborative filtering pakai cosine similarity.
-
----
-
-### ✅ Revisi Bagian **Data Understanding** (sesuai data dan kode yang kamu pakai):
-
----
-
 ## Data Understanding
 
 Dataset yang digunakan dalam proyek ini merupakan bagian dari **MovieLens 100k Dataset**, yang dapat diakses dan diunduh secara gratis melalui tautan berikut:
@@ -73,17 +54,6 @@ Dalam proyek ini, fokus utama diberikan pada dua struktur data:
 
 1. **Data film** dari `u.item` : berisi informasi tentang film dan genre
 2. **Data rating** dari `u.data` : berisi data rating yang diberikan oleh pengguna terhadap film
-
-Makasih udah kirim isi notebook-nya! Dari informasi yang kamu tampilkan, aku udah bisa bantu buatin bagian **Data Understanding** yang sesuai dengan notebook-mu, termasuk informasi dataset, kondisi datanya, fitur-fitur, dan pengecekan missing value. Berikut versi revisinya untuk laporan:
-
----
-
-## 📊 Data Understanding
-
-Proyek ini menggunakan dua dataset utama dari MovieLens 100k Dataset, yaitu:
-
-* **movies**: berisi informasi tentang film dan genre
-* **ratings**: berisi data rating yang diberikan oleh pengguna terhadap film
 
 ### 📌 Struktur dan Informasi Dataset
 
@@ -193,13 +163,6 @@ Pada tahap ini, dibuat dua sistem rekomendasi film dengan algoritma berbeda, yai
 #### Top-N Recommendation Output
 
 Kedua metode mampu memberikan rekomendasi top-N (dalam kasus ini top-5) film yang relevan berdasarkan input film dari pengguna.
-
-
-## Evaluation
-
-Sip! Ini contoh penjelasan yang bisa kamu pakai di laporan bagian evaluasi model:
-
----
 
 ## Evaluasi
 

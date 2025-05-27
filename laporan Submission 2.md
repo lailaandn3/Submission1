@@ -131,7 +131,7 @@ Visualisasi ini menunjukkan **10 film dengan jumlah rating terbanyak**:
 * **Star Wars (1977)** menjadi film paling populer dari segi rating.
 * Mayoritas film berasal dari **era 1990-an** dengan genre dominan: **fiksi ilmiah**, **komedi**, dan **aksi**.
 
-*(sertakan grafik horizontal bar top 10 film)*
+![Distribusi film](https://raw.githubusercontent.com/lailaandn3/Submission1/a76b9d059bce666aea4714f14b2c58820d9e372c/film.png) 
 
 
 

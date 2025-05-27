@@ -111,15 +111,17 @@ Visualisasi ini menunjukkan **frekuensi rating** dari 1 hingga 5:
 
 ---
 
-#### 📊 2. Jumlah Rating per Film
+#### 📊 2. Jumlah Film per Genre
 
-Visualisasi ini menunjukkan **banyaknya rating** yang diterima oleh masing-masing film:
+Grafik batang di bawah ini memperlihatkan jumlah film untuk masing-masing genre dalam dataset MovieLens 100k.
 
-* Sebagian besar film menerima **kurang dari 100 rating**.
-* Distribusi **sangat miring ke kiri** (right-skewed), artinya hanya sedikit film yang mendapat rating sangat banyak.
+* Genre Drama dan Comedy merupakan genre dengan jumlah film terbanyak.
 
-*(sertakan histogram jumlah rating per film)*
+* Disusul oleh genre Action, Thriller, dan Romance.
 
+* Genre seperti Western, Film-Noir, Fantasy, dan Unknown memiliki jumlah film yang jauh lebih sedikit dibandingkan genre lainnya.
+
+![Distribusi genre](https://raw.githubusercontent.com/lailaandn3/Submission1/80dc1a312683624bcfb966258e5c5b10f0784385/genre.png) 
 ---
 
 #### 📊 3. Top 10 Film dengan Jumlah Rating Terbanyak

@@ -205,10 +205,13 @@ Berikut adalah top-5 hasil rekomendasi dari dua pendekatan sistem rekomendasi ya
 
 ![Content-Based Filtering](https://raw.githubusercontent.com/lailaandn3/Submission1/5caf6453f7cc7852302f5dddb3770d6e1a730791/Screenshot%202025-05-29%20090312.png)
 
+* Content-Based Filtering menghasilkan rekomendasi film yang memiliki kemiripan genre dengan Toy Story (1995). Terlihat bahwa film yang direkomendasikan seperti Aladdin dan Goofy Movie memiliki genre animasi, keluarga, dan petualangan — sesuai dengan karakteristik Toy Story.
 
 🤝 Collaborative Filtering
 
 ![Collaborative Filtering](https://raw.githubusercontent.com/lailaandn3/Submission1/5caf6453f7cc7852302f5dddb3770d6e1a730791/Screenshot%202025-05-29%20090333.png)
+
+* Collaborative Filtering menghasilkan rekomendasi berdasarkan preferensi pengguna lain yang memberikan rating tinggi untuk Toy Story. Film seperti Star Wars dan Mission: Impossible muncul karena secara historis sering disukai oleh pengguna yang juga menyukai Toy Story, meskipun genrenya berbeda. Ini menunjukkan kekuatan collaborative filtering dalam menemukan pola perilaku pengguna.
 
 ## Evaluasi
 

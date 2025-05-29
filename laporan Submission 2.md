@@ -199,7 +199,14 @@ Pada tahap ini, dibuat dua sistem rekomendasi film dengan algoritma berbeda, yai
 
 #### Top-N Recommendation Output
 
-Kedua metode mampu memberikan rekomendasi top-N (dalam kasus ini top-5) film yang relevan berdasarkan input film dari pengguna.
+Berikut adalah top-5 hasil rekomendasi dari dua pendekatan sistem rekomendasi yang telah dibangun:
+
+🎬 Content-Based Filtering
+![Content-Based Filtering](https://raw.githubusercontent.com/lailaandn3/Submission1/5caf6453f7cc7852302f5dddb3770d6e1a730791/Screenshot%202025-05-29%20090312.png)
+
+
+🤝 Collaborative Filtering
+![Collaborative Filtering](https://raw.githubusercontent.com/lailaandn3/Submission1/5caf6453f7cc7852302f5dddb3770d6e1a730791/Screenshot%202025-05-29%20090333.png)
 
 ## Evaluasi
 
